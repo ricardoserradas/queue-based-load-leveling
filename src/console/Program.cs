@@ -26,6 +26,9 @@ namespace console
         private static void ReadQueue(){
             // Configure a connection string for Azure Storage
             // https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string
+
+            // Get started with Azure Queue storage using .NET
+            // https://docs.microsoft.com/en-us/azure/storage/queues/storage-dotnet-how-to-use-queues#change-the-contents-of-a-queued-message
             var queueConnection = Configuration["ConnectionStrings:QueueConnection"];
 
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(queueConnection);
